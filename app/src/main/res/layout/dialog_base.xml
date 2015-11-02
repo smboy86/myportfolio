@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dlgImageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리뷰에 궁금하신 기능에 대해 남겨주시면"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlgImageName"
+        android:text="OK" />
+    
+    <Button
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnOk"
+        android:layout_toRightOf="@id/btnOk"
+        android:text="리뷰쓰기" />
+
+</RelativeLayout>

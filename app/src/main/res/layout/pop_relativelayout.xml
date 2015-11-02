@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="720dp"
+    android:padding="10dp"
+    android:background="@drawable/pop_login">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="로그인 샘플"
+        android:textColor="#ff4bb4ff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:background="#aaFFFFFF">
+
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="Account :"
+            android:textColor="#ff222222"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/usernameEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/usernameLabel"
+            android:layout_alignBaseline="@id/usernameLabel"
+            android:layout_marginLeft="4dp"
+            android:hint="smboy86@naver.com"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:layout_below="@id/usernameLabel"
+            android:text="Password :"
+            android:textColor="#ff222222"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/passwordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/passwordLabel"
+            android:layout_alignBaseline="@id/passwordLabel"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Login"
+            android:drawablePadding="2dp"
+            />
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLabel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Exit"
+            android:drawablePadding="2dp"
+            />
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "teambutterflower.co.kr.MyPortfolio"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 13
+        versionName "1.5.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Google libraries
+    compile 'com.android.support:appcompat-v7:21.0.+'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.android.support:palette-v7:21.0.0'
+
+    // Square libraries
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.jakewharton:butterknife:6.0.0'
+
+    // Triena
+    compile 'cn.trinea.android.common:trinea-android-common:4.2.15'
+
+}

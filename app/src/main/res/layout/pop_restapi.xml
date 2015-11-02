@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="720dp"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/rest_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="http://www.naver.com"/>
+
+    <Spinner
+        android:id="@+id/rest_spinner"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:background="#aec7e1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/rest_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </ScrollView>
+
+
+</LinearLayout>

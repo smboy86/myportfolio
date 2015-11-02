@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="720dp"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보낼 전화번호(ex: 01010047942)"/>
+    <EditText
+        android:id="@+id/telNo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:inputType="phone">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:text="메시지"/>
+    <EditText
+        android:id="@+id/smsContent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:maxLength="30"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="문자 발송"/>
+
+</LinearLayout>

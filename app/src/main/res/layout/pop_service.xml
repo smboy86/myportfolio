@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="720dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/service_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서비스 실행"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/service_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_start"
+        android:layout_centerHorizontal="true"
+        android:text="Start Music"/>
+    <TextView
+        android:id="@+id/service_start_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/service_start_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/service_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서비스 정지"
+        android:textSize="20dp"
+        android:layout_below="@id/service_start_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:id="@+id/service_stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_stop"
+        android:layout_centerHorizontal="true"
+        android:text="Stop Music"/>
+    <TextView
+        android:id="@+id/service_stop_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/service_stop_btn"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/vizualizer"
+        android:background="#ffffff"
+        android:layout_below="@id/service_stop_result"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

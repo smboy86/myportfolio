@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">개발자 박성민</string>
+    <string name="toolbar">toolbar</string>
+    <string name="spinner_prompt">선택</string>
+
+    <string-array name="rest_spinner">
+        <item>Seoul</item>
+        <item>Busan</item>
+        <item>Inchen</item>
+        <item>Daegu</item>
+        <item>Daejeon</item>
+        <item>Kwangju</item>
+        <item>Ulsan</item>
+        <item>Suwon</item>
+    </string-array>
+    <string-array name="spinner_list">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+    </string-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363F44"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/awesome"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_dark"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:text="Contact Me :D"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            android:gravity="bottom"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/viewContentList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_bookmark_outline_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="App Description"
+        />
+
+    <TextView
+        android:id="@+id/menu_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="Write e-mail"
+        />
+
+    <TextView
+        android:id="@+id/menu_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="Call telephone"
+        />
+
+    <TextView
+        android:id="@+id/menu_sms"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="Send sms"
+        />
+
+    <TextView
+        android:id="@+id/menu_naver"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="Add a buddy in Naver"
+        />
+    <TextView
+        android:id="@+id/menu_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="16dp"
+        android:tag="bookings"
+        android:textColor="#FFF"
+        android:text="Follow me on facebook"
+        />
+</LinearLayout>

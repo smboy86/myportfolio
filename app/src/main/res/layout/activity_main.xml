@@ -1,0 +1,91 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:gravity="top"
+            android:ignoreGravity="@+id/toolbar">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"/>
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:navigationIcon="@drawable/ic_done_white_24dp"/>
+            <Button
+                android:id="@+id/title_btn"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#af25C7C6"
+                android:text="박성민 포트폴리오"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_vertical"
+                />
+            <Button
+                android:id="@+id/floating_button_margin"
+                android:layout_height="55dp"
+                android:layout_width="20dp"
+                android:background="@drawable/main_floting_button_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"/>
+            <Button
+                android:id="@+id/floating_button"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:background="@drawable/main_floting_button"
+                android:layout_toLeftOf="@id/floating_button_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:onClick="btnClick"/>
+        </RelativeLayout>
+
+        <com.hb.views.PinnedSectionListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false"
+            android:divider="@null">
+
+            </com.hb.views.PinnedSectionListView>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/drawer"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="teambutterflower.co.kr.myportfolio.views.fragments.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer"
+        />
+
+</android.support.v4.widget.DrawerLayout>
